@@ -97,3 +97,25 @@ public class MyClass : MonoBehaviour
     }
 }
 ```
+
+
+
+# GetOrAddComponent
+This simple extension method will prevent you from having to write very redundant and ugly code every time you need to get a component but are not sure if it actually exist already.
+
+## Usage
+Create a new script named UnityEngineExtensions or whatever you like and put the above code in it. Then simply replace any GetComponent calls with GetOrAddComponent to ensure the component exist without having to check for null.
+
+```
+using UnityEngine;
+ 
+public class ExampleScript : MonoBehaviour
+{
+    Rigidbody m_Body;
+ 
+    void Awake()
+    {
+        m_Body = gameObject.GetOrAddComponent<Rigidbody>();
+    }
+}
+```
