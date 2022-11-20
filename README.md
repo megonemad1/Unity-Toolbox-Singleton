@@ -1,4 +1,6 @@
 # Toolbox
+Originaly from the  http://wiki.unity3d.com/index.php/Toolbox, i used web.archive.org to save this.  
+
 
 ## Introduction
 The "Toolbox" is a concept introduced by J.B. Rainsberger in the article Use your singletons wisely. The basic idea being that the application, not the components, should be the singleton. This basically means creating one singleton (the toolbox) that aggregates and manages all other classes that would normally be singletons themselves. This improves upon the concept by reducing coupling and making it much easier to test.
